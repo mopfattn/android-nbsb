@@ -14,3 +14,6 @@ To reproduce this issue perform the following steps:
 3. Put the app into background, lock and unlock the display. Now everything is ok.
 
 Notice: In this case this issue only occurs when the activity has called `setShowWhenLocked(true)`, see [MainActivity.onCreate](app/src/main/java/de/pfattner/nbsb/MainActivity.kt).  
+
+
+![Black screen bug after unlock](docs/black-screen-bug-after-unlock.gif)
