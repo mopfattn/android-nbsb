@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
             .setName("Black Screen Bug Notifications")
             .build()
 
-        manager.deleteNotificationChannel("nbsb")
         manager.createNotificationChannel(channel)
 
         val pendingIntent = PendingIntent.getActivity(this, 1, Intent.makeMainActivity(ComponentName(this, MainActivity::class.java)), PendingIntent.FLAG_IMMUTABLE)
